@@ -29,6 +29,26 @@ class HomePageView extends GetView<HomePageController> {
               onPressed: () => controller.requestLocationPermission(),
               child: Text('Request Location Permission'),
             ),
+            ElevatedButton(
+              onPressed: () => controller.requestCameraPermission(),
+              child: Text('Request camera Permission'),
+            ),
+            ElevatedButton(
+              onPressed: () => controller.requestContactPermission(),
+              child: Text('Request contact Permission'),
+            ),
+            ElevatedButton(
+              onPressed: () => controller.requestLocationAlwaysPermission(),
+              child: Text('Request Location always Permission'),
+            ),
+            ElevatedButton(
+              onPressed: () => controller.requestPhotoPermission(),
+              child: Text('Request Photo Permission'),
+            ),
+            ElevatedButton(
+              onPressed: () => controller.requestStoragePermission(),
+              child: Text('Request Storage Permission'),
+            ),
           ],
         ),
       ),
