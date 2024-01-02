@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-
 import '../controllers/home_page_controller.dart';
 
 class HomePageView extends GetView<HomePageController> {
@@ -26,27 +25,27 @@ class HomePageView extends GetView<HomePageController> {
             ),
             SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () => controller.requestLocationPermission(),
+              onPressed: () => controller.requestLocationPermission(context),
               child: Text('Request Location Permission'),
             ),
             ElevatedButton(
-              onPressed: () => controller.requestCameraPermission(),
+              onPressed: () => controller.requestCameraPermission(context),
               child: Text('Request camera Permission'),
             ),
             ElevatedButton(
-              onPressed: () => controller.requestContactPermission(),
+              onPressed: () => controller.requestContactPermission(context),
               child: Text('Request contact Permission'),
             ),
             ElevatedButton(
-              onPressed: () => controller.requestLocationAlwaysPermission(),
+              onPressed: () => controller.requestLocationAlwaysPermission(context),
               child: Text('Request Location always Permission'),
             ),
             ElevatedButton(
-              onPressed: () => controller.requestPhotoPermission(),
+              onPressed: () => controller.requestPhotoPermission(context),
               child: Text('Request Photo Permission'),
             ),
             ElevatedButton(
-              onPressed: () => controller.requestStoragePermission(),
+              onPressed: () => controller.requestStoragePermission(context),
               child: Text('Request Storage Permission'),
             ),
           ],
@@ -54,4 +53,5 @@ class HomePageView extends GetView<HomePageController> {
       ),
     );
   }
+
 }
